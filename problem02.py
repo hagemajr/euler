@@ -1,10 +1,8 @@
 #!/usr/bin/python3.4
 
 def main():
-    a = 1
-    b = 2
-    fib = []
-    even_fib = []
+    a, b = 1, 2
+    fib, even_fib = [], []
     while(a < 4000000 and b < 4000000):
         if(a not in fib):
             fib.append(a)
@@ -15,8 +13,7 @@ def main():
             if(b % 2 == 0):
                 even_fib.append(b)
         c = a + b
-        a = b
-        b = c
+        a, b = b, c
     print(fib)
     print(even_fib)
     print(sum(even_fib))
