@@ -42,10 +42,10 @@ def smallest_multiple(multiples):
                     cols.append(x)
     #multiply the column header to find the least common multiple
     return reduce(operator.mul, cols, 1)
-        
+ 
 
 start_time = time.time()
-print(smallest_multiple(range(1,31)))
+print(smallest_multiple(range(1,101)))
 print("Execution time: {0}".format(time.time() - start_time))     
             
             

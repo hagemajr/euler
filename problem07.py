@@ -14,7 +14,7 @@ def is_prime(n):
 start_time = time.time()
 counter = 1
 increment_me = 1
-while(counter != 10001):
+while(counter != 100001):
     increment_me += 2
     if(is_prime(increment_me)):
         counter += 1
